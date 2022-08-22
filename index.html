@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<meta charset="UTF-8">
+	<meta name="description" content=""/>
+	<meta name="keywords" content="">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="public/css/normalize.css">
+	<link rel="stylesheet" href="public/css/index.css">
+	<script src="https://kit.fontawesome.com/ab0b893dd8.js" crossorigin="anonymous"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>	
+	<title>Raul´s Portfolio</title>
+</head>
+<body>
+	<main class="main_container">
+		<header class="intro" id="intro">						
+			<div class="skills">
+				<div class="box">
+           		<span style="--i:1"><div class="card">HTML</div></span>
+            	<span style="--i:2"><div class="card">CSS</div></span>
+            	<span style="--i:3"><div class="card">JAVASCRIPT</div></span>
+            	<span style="--i:4"><div class="card">JQUERY</div></span>
+            	<span style="--i:5"><div class="card">REACT</div></span>
+            	<span style="--i:6"><div class="card">PHP</div></span>
+            	<span style="--i:7"><div class="card">MYSQL</div></span>
+            	<span style="--i:8"><div class="card">FIGMA</div></span>
+            	<span style="--i:9"><div class="card">GITHUB</div></span>		
+        		</div>
+			</div>			
+			<div class="image">
+				<img src="public/resources/images/image.png" alt="">
+			</div>
+			<div class="overlay"></div>
+		</header>
+		<nav class="navbar">
+			<div class="title">
+				<h1>My Portfolio</h1>
+			</div>
+			<div class="menu" id="menu">
+				<ul>
+					<li class="menu_option" id="home">Home</li>
+					<li class="menu_option" id="acerca">About me</li>
+					<li class="menu_option" id="trabajo">Work</li>
+					<li class="menu_option" id="contacto">Contact me</li>
+				</ul>
+			</div>
+			<div class="responsive_menu" id="responsive_menu">
+				<i class="fa-solid fa-bars"></i>
+			</div>			
+		</nav>
+		<section class="about_me" id="about_me">
+			<div class="text_animate">
+				<h2>Hi, my name is Raul and i really like to <span class="typed"></span></h2>
+			</div>
+			<div class="video_bg">
+				<video src="public/resources/videos/shapes.mp4" autoplay muted loop></video>
+			</div>
+		</section>
+		<section class="work" id="my_work">
+			<h2>My work</h2>
+			<div class="slider_container">
+				<div class="btn_prev"><i class="fa-solid fa-angles-left"></i></div>
+				<div class="slider" id="slider">
+					<div class="slider_section">
+						<img src="public/resources/images/qrtime.png" alt="">
+						<div class="slider_info">
+							<p>Web app for arrival time check in your office or workplace with a QR code, this app use javascript libraries to generate qr code and scan with the webcam, works perfectly in Android and IOS. </p>
+						</div>
+					</div>
+					<div class="slider_section">
+						<img src="public/resources/images/covidmonitor.png" alt="">
+						<div class="slider_info">
+							<p>This school web app capture your health symptoms in a small form that provides a QR code to access control, it use  javascript libraries to qr code and webcam scanner, it provides a personal monitoring to red codes, select a student or any random student for covid-test and notify him by email.
+							</p>
+						</div>						
+					</div>
+					<div class="slider_section">
+						<img src="public/resources/images/library.png" alt="">
+						<div class="slider_info">
+							<p>Virtual library web site, this site use a PDFjs lib for render pdf, dont need to use iframes, perfectly secure to publish pdf, not allow download or copy and paste the pdf info, it responsive desing allow you read in ur tablet, cellphone o laptop.
+							</p>
+						</div>
+					</div>
+					<div class="slider_section">
+						<img src="public/resources/images/diplomas.png" alt="">
+						<div class="slider_info">
+							<p>This project belongs to a school, they needed to certify its diplomas because they were being cloned, the web app creates diplomas with massive upload through an excel file, it provides pdf and xml files with javascript library, you can read qr code in the file with the inner interface and verify its authenticity.
+							</p>
+						</div>
+					</div>
+					<div class="slider_section">
+						<img src="public/resources/images/redesing.png" alt="">
+						<div class="slider_info">
+							<p>Re-design of the interface of an open source general purpose LMS platform.</p>
+						</div>
+					</div>
+				</div>
+				<div class="btn_next"><i class="fa-solid fa-angles-right"></i></div>
+			</div>			
+		</section>
+		<section class="contact" id="contact">
+			<div class="form_container">
+				<h2>Contact me</h2>
+				<form class="contact_form" id="contact_form">
+					<input class="input_form" type="text" name="person_name" placeholder="Name" pattern="[a-zA-Z0-9 ]+" required autocomplete="off" onkeypress="return validate(event);">
+					<input class="input_form" type="email" name="person_email" placeholder="E-mail" required autocomplete="off">
+					<textarea class="text_form" name="text" id="" placeholder="Tell me " required onkeypress="return validate(event);"></textarea>
+					<input class="submit_form" id="submit_form" type="submit" value="Send">
+				</form>
+			</div>
+			<div class="social">
+				<div class="social_title">
+					<h2>Find me in...</h2>
+				</div>
+				<div class="social_items">
+					<div class="social_item">
+						<a href="https://www.facebook.com/raul.sibajaleon/">
+							<i class="fa-brands fa-facebook"></i>
+						</a>
+					</div>
+						<div class="social_item">
+						<a href="https://www.linkedin.com/in/ra%C3%BAl-sibaja-721776229">
+							<i class="fa-brands fa-linkedin"></i>
+						</a>
+					</div>
+					<div class="social_item">
+						<a href="https://github.com/LitoSibaja">
+							<i class="fa-brands fa-github"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+<script src="public/javascript/typed.js"></script>
+<script src="public/javascript/app.js"></script>
+<script src="public/javascript/slider.js"></script>
+<script src="public/javascript/scrollout.js"></script>	
+<script>
+		ScrollOut({
+		targets: '.navbar, menu_option'
+		});
+</script>
+</body>
+</html>
